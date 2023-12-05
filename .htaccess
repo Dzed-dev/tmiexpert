@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Tambahkan aturan kebijakan cache
+    <FilesMatch "\.(jpg|jpeg|png|gif|ico|js|css)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+
+    # Aturan redirect ke index.html jika bukan file atau direktori yang valid
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.html/$1 [L]
+</IfModule>
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+  
+    # Remixicon font
+    ExpiresByType application/x-font-woff2 "access plus 1 year"
+  
+    # Logo SVG
+    ExpiresByType image/svg+xml "access plus 1 year"
+  
+    # Boxicons font
+    ExpiresByType application/x-font-woff2 "access plus 1 year"
+  
+    # Bootstrap Icons font
+    ExpiresByType application/x-font-woff2 "access plus 1 year"
+  </IfModule> 
