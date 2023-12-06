@@ -4,6 +4,17 @@
 :root{
   --gradient: linear-gradient(to right, #0ee951, #00dabf);
 }
+@font-face {
+  font-family: 'BootstrapIcons';
+  src: url('assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bootstrapicon';
+  src: url('assets/vendor/boxicons/fonts/boxicons.woff2') format('woff2');
+  font-display: swap;
+}
 
 body {
   font-family: "Poppins", sans-serif;
