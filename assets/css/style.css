@@ -4,17 +4,6 @@
 :root{
   --gradient: linear-gradient(to right, #0ee951, #00dabf);
 }
-@font-face {
-  font-family: 'BootstrapIcons';
-  src: url('assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Bootstrapicon';
-  src: url('assets/vendor/boxicons/fonts/boxicons.woff2') format('woff2');
-  font-display: swap;
-}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -828,11 +817,10 @@ section {
   transition: .9s;
   background-color: #4668a2;
 }
-
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-.services .icon-box {
+.services .icon-box{
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all ease-in-out 0.2s;
@@ -1232,22 +1220,21 @@ section {
 .pricing .box {
   padding: 60px 40px;
   box-shadow: 0 3px 20px -2px rgba(20, 45, 100, 0.1);
-  background: #fff;
+  background: transparent;
   height: 100%;
-  border-top: 4px solid #fff;
-  border-radius: 5px;
+  border: 2px solid #fff;
 }
 
 .pricing h3 {
   font-weight: 500;
   margin-bottom: 15px;
   font-size: 20px;
-  color: #37517e;
+  color: #FFF;
 }
 
 .pricing h4 {
   font-size: 48px;
-  color: #37517e;
+  color: #FFF;
   font-weight: 400;
   font-family: "Jost", sans-serif;
   margin-bottom: 25px;
@@ -1258,7 +1245,7 @@ section {
 }
 
 .pricing h4 span {
-  color: #47b2e4;
+  color: #0ee951;
   font-size: 18px;
   display: block;
 }
@@ -1266,7 +1253,7 @@ section {
 .pricing ul {
   padding: 20px 0;
   list-style: none;
-  color: #999;
+  color: #fff;
   text-align: left;
   line-height: 20px;
 }
@@ -1277,7 +1264,7 @@ section {
 }
 
 .pricing ul i {
-  color: #28a745;
+  color: #0ee951;
   font-size: 24px;
   position: absolute;
   left: 0;
@@ -1296,35 +1283,32 @@ section {
   text-decoration: line-through;
 }
 
-.pricing .buy-btn {
-  display: inline-block;
-  padding: 12px 35px;
-  border-radius: 50px;
-  color: #47b2e4;
-  transition: none;
-  font-size: 16px;
-  font-weight: 500;
-  font-family: "Jost", sans-serif;
-  transition: 0.3s;
-  border: 1px solid #47b2e4;
+.buy-btn {
+  color: white;
+	border-radius: 0;
+  border-style: solid;
+	border-width: 2px;
+	padding: 10px 30px;
+  position: absolute;
+	border-image-slice: 1;
+  background-image: none;
+	background: transparent;
+	border-image-source: var(--gradient);
+  transition: 0.2s;
+	box-shadow: 5px 5px 0px 0px #0ee951;
+  margin-top: -15px;
 }
 
-.pricing .buy-btn:hover {
-  background: #47b2e4;
-  color: #fff;
+.buy-btn:hover {
+  color: white;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 10px 30px;
+	transform: translate(4px, 4px);
 }
 
 .pricing .featured {
-  border-top-color: #47b2e4;
-}
-
-.pricing .featured .buy-btn {
-  background: #47b2e4;
-  color: #fff;
-}
-
-.pricing .featured .buy-btn:hover {
-  background: #23a3df;
+  border-top: 4px solid #0ee951;
 }
 
 @media (max-width: 992px) {
