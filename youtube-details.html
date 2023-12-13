@@ -77,7 +77,7 @@
           <div id="boxpaket" class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="box">
               <h3 id="paket1"></h3>
-              <h4 id="harga1"><sup>Rp</sup><span>per View</span></h4>
+              <h4 id="harga1"><sup>Rp</sup><span>per <span id="per"></span></span></h4>
               <ul id="starter">
               </ul>
               <a href="#" class="buy-btn">Get Started</a>
@@ -87,7 +87,7 @@
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
             <div class="box featured">
               <h3 id="paket2"></h3>
-              <h4 id="harga2"><sup>Rp</sup><span>per View</span></h4>
+              <h4 id="harga2"><sup>Rp</sup><span>per <span id="per"></span></span></h4>
               <ul id="basic">
               </ul>
               <a href="#" class="buy-btn">Get Started</a>
@@ -97,7 +97,7 @@
           <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="box">
               <h3 id="paket3"></h3>
-              <h4 id="harga3"><sup>Rp</sup><span>per View</span></h4>
+              <h4 id="harga3"><sup>Rp</sup><span>per <span id="per"></span></span></h4>
               <ul id="bisnis">
               </ul>
               <a href="#" class="buy-btn">Get Started</a>
@@ -196,6 +196,7 @@
         harga1: '50',
         harga2: '80',
         harga3: '150',
+        per: 'View',
         deskripsi:'Layanan View Standart Kami dengan waktu tonton hanya beberapa detik, cocok untuk menambah view anda',
         starter:['Real Views (No bots)','waktu tonton 10 - 30 detik','No Drop','Minimum Pembelian 1.000'],
         basic:['Real Views (No bots)','waktu tonton 10 - 60 detik','No Drop','Minimum Pembelian 1.000','Garansi 30 Hari'],
@@ -209,6 +210,7 @@
         harga1: '300',
         harga2: '500',
         harga3: '1.000',
+        per: 'View',
         deskripsi: 'Layanan High Retention View atau bisa dibilang layanan view premium yang kami miliki cocok untuk anda yang ingin mengejar jam tayang youtube',
         starter:['Real Views (No bots)','waktu tonton 5 Menit','No Drop','Minimum Pembelian 1.000', 'Kecepatan 150 Views/Hari','Garansi 60 Hari'],
         basic:['Real Views (No bots)','waktu tonton 5 Menit','No Drop','Minimum Pembelian 500','Kecepatan 500 Views/Hari','Garansi 90 Hari'],
@@ -222,6 +224,7 @@
         harga1: '40',
         harga2: '70',
         harga3: '100',
+        per: 'View',
         deskripsi: 'Layanan View yang di fokuskan pada video SHORT anda',
         starter:['Real Views (No bots)','waktu tonton 1 - 30 Detik','No Drop','Minimum Pembelian 1.000', 'Kecepatan 2.000 Views/Hari','Garansi 60 Hari'],
         basic:['Real Views (No bots)','waktu tonton 1 - 30 Detik','No Drop','Minimum Pembelian 1.000','Kecepatan 5.000 Views/Hari','Garansi 90 Hari'],
@@ -235,6 +238,7 @@
         harga1: '300',
         harga2: '500',
         harga3: '1.200',
+        per: 'Subscriber',
         deskripsi: 'Layanan Penambah Subscriber untuk Channel Anda Yang Lagi Berkembang',
         starter:['Real Subscribers (No bots)','No Drop','Minimum Pembelian 100', 'Kecepatan 50-70 Subscribers/Hari','Subsciber Harus di public','Minimal Ada 2 - 3 Videos','Durasi Video Lebih dari 90 detik','Garansi 30 Hari'],
         basic:['Real Subscribers (No bots)','No Drop','Minimum Pembelian 100','Kecepatan 100 - 150 Subscribers/Hari','Subsciber Harus di public','Minimal Ada 2 - 3 Videos','Durasi Video Lebih dari 90 detik','Garansi 60 Hari'],
@@ -248,6 +252,7 @@
         harga1: '50',
         harga2: '80',
         harga3: '150',
+        per:'Like',
         deskripsi: 'Layanan Likes Video Untuk Video Yang Anda Upload Pada Channel Anda',
         starter:['Real Likes (No bots)','Small drops are possible','Minimum Pembelian 100','Garansi 30 Hari'],
         basic:['Real Likes (No bots)','Small drops are possible','Minimum Pembelian 100','Garansi 30 Hari'],
@@ -261,6 +266,7 @@
         harga1: '500',
         harga2: '500',
         harga3: '1.000',
+        per: 'Comment',
         deskripsi: 'Kami Menyediakan 3 Paket Untuk Comment Video Youtube Anda',
         starter:['Real Comments (No bots)','Bahasa Rusia','No Drop','Minimum Pembelian 10','Garansi 30 Hari'],
         basic:['Real Comments (No bots)','Bahasa Inggris','No Drop','Minimum Pembelian 10','Garansi 30 Hari'],
@@ -273,6 +279,7 @@
 
     // Menampilkan data produk di halaman
     document.getElementById('tittle').innerHTML = detailData.title;
+    document.getElementById('per').innerHTML = detailData.per;
     document.getElementById('Desc').innerHTML = detailData.deskripsi;
 
     // Menampilkan informasi paket
